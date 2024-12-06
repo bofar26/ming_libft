@@ -6,7 +6,7 @@
 /*   By: mipang <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 17:11:36 by mipang            #+#    #+#             */
-/*   Updated: 2024/11/25 21:48:18 by mipang           ###   ########.fr       */
+/*   Updated: 2024/12/05 15:37:08 by mipang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putendl_fd(char *s, int fd)
 	int	i;
 
 	i = 0;
-	if (s == NULL)
+	if (s == NULL || fd < 0)
 		return ;
 	while (s[i] != '\0')
 	{
